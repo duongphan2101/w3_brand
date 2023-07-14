@@ -25,3 +25,27 @@
     // modalcontainer.addEventListener('click', function(envent){
     //     envent.stopPropagation
     // })
+
+    var header = document.getElementById('header');
+    var mobileMenu = document.getElementById('btn-menu');
+    var headerHeight = header.clientHeight;
+
+    //đóng mở menu mobile
+    mobileMenu.onclick = function() {
+        var isClosed = header.clientHeight == headerHeight;
+        if(isClosed) {
+            header.style.height = 'auto';
+        } else {
+            header.style.height = null;
+        }
+    }
+    //Tự Động đóng menu sau khi chọn
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+
+    for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+
+        menuItem.onclick = function() {
+            header.style.height = null;
+        }
+    }

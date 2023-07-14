@@ -1,0 +1,32 @@
+/* 
+    PC: => 1024px
+    Tablet: >= 740px & < 1024px
+    Mobile: < 740px
+*/
+/* pc */
+@media (min-width: 1024px) {
+
+}
+
+/* mobile */
+@media (max-width: 740px) {
+    *{
+        color: blue;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #nav li {
+        display: block;
+    }
+
+    #search-button .search-icon{
+        display: none;
+    }
+
+    #search-button #btn-menu{
+        display: block;
+    }
+}
+

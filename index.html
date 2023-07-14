@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>W3_Brand</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
     <link rel="stylesheet" href="/assets/font/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="shortcut icon" href="/assets/img/chicago.jpg">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 </head>
 </head>
 <body>
@@ -13,18 +15,19 @@
         <!--begin nav--> 
         <div id="header">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#branch">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">More
+                    <a href="#">
+                        More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a> 
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -33,6 +36,8 @@
         <!--bengin searh-->
             <div id="search-button">
                 <i class="search-icon ti-search"></i>
+
+                <i class="ti-view-list" id="btn-menu"></i>
             </div>
 
         <!--End search-->
@@ -51,7 +56,9 @@
                 <p class="content-title">THE BAND</p>
                 <p class="content-sub-title"><i>We love music</i></p>
                 <p class="content-txt">
-                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
 
                 <div class="member">
@@ -126,20 +133,30 @@
 
                 <div class="ct-box">
                     <div class="ctbox-left">
-                            <i class="icon ti-location-pin"> Chicago, US</i> <br>
-                            <i class="icon ti-microphone"> Phone: +00 151515</i> <br>
-                            <i class="icon ti-email"> Email: mail@mail.com</i>
+                        <p class="location-contact">
+                            <i class="tag ti-location-pin"></i>
+                            Chicago, US
+                        </p>
+                        <p class="location-contact">
+                            <i class="tag ti-mobile"></i>
+                            Phone: +00 151515
+                        </p>
+                        <p class="location-contact">
+                            <i class="tag ti-email"></i>
+                            Email: mail@gmail.com
+                        </p>
+                           
                     </div>
 
                     <div class="ctbox-right">
-                        <div class="row">
+                        <div class="row1">
                             <input type="text" name="" id="txtrow" placeholder="Name">
-                            <input type="text" name="" id="txtrow" placeholder="Email" style="margin-left: 20px;">
+                            <input type="text" name="" id="txtrow" placeholder="Email">
                         </div>
                         <div class="row">
                             <input type="text" name="" id="txtrow2" placeholder="Messager">
                         </div>
-                        <div class="row">
+                        <div class="row2">
                             <button class="btn-send">SEND</button>
                         </div>
                     </div>
